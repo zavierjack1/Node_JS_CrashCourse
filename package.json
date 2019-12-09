@@ -1,0 +1,19 @@
+{
+  "name": "crash_course",
+  "version": "1.0.0",
+  "description": "node js crash course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index", 
+    "dev":"nodemon index"
+  },
+  "author": "Zavier Jack",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

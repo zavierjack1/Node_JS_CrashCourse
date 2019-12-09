@@ -3,37 +3,6 @@ const path = require('path');
 const fs = require('fs')
 
 const server = http.createServer((request, response) => {
-    /* console.log(`request url: ${request.url}`);
-    if (request.url == '/'){
-        fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, content)=>{
-            if (err) throw err;
-            response.writeHead(200, {'Content-Type': 'text/html'});
-            response.end(content);
-        });
-    }
-    else if (request.url == '/about'){
-        fs.readFile(path.join(__dirname, 'public', 'about.html'), (err, content)=>{
-            if (err) throw err;
-            response.writeHead(200, {'Content-Type': 'text/html'});
-            response.end(content);
-        });
-    }
-    else if (request.url == '/api/users'){
-        const users = [
-            {
-                name: 'Bob Smith',
-                age: 30
-            }, 
-            {
-                name: 'Katelynne Beaty',
-                age: 28
-            }
-        ];
-
-        response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(users));
-    } */
-
     //Build file path
     let filePath = path.join(
         __dirname, 
